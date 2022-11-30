@@ -230,8 +230,8 @@ class LAP(object):
         
         - depression_strength: float:
             This float determines the strength of the depression
-            applied to the gradients. It is the value of m in 
-            dep = 1-tanh(m*d)**2.
+            applied to the gradients. It is the value of :code:`m` in 
+            :code:`dep = 1-tanh(m*d)**2`.
             Defaults to :code:`1`.
         
         - depression_function: function or string, optional:
@@ -240,11 +240,11 @@ class LAP(object):
             loss history) and the source of the current batch. 
             Ensure that the first two arguments of this function are
             loss_array and source_idx.
-            If string, please ensure it is 'discrete_ranking_std'
+            If string, please ensure it is :code:`'discrete_ranking_std'`
             Defaults to :code:`'discrete_ranking_std'`.
         
         - depression_function_kwargs: dict, optional:
-            Keyword arguments that will be used in depression_function
+            Keyword arguments that will be used in :code:`depression_function`
             when initiating it, if it is specified by a string.
             Defaults to :code:`{}`.
         

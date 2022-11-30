@@ -69,6 +69,72 @@ optimizer = LAP(
     )
 ```
 
+## The Documentation for LAP:
+
+Depression won't be applied until at least `lap_n` loss values
+have been collected for at least two sources. This could be 
+longer if a `hold_off` parameter is used in the depression function.
+
+This class will wrap any optimiser and perform lap gradient depression
+before the values are passed to the underlying optimiser.
+
+
+### Examples
+
+
+The following wraps the Adam optimiser with the LAP functionality.
+    
+    >>> optimizer = LAP(
+    ...     torch.optim.Adam, params=model.parameters(), lr=0.01,
+    ...     )
+
+Ensure that when using this optimiser, during the `.step`
+method, you use the arguments `loss` and `source`. 
+For example:
+
+    >>> loss = loss.backward()
+    >>> optimizer.step(loss, source)
+
+
+### Arguments
+
+- `optimizer`: `torch.optim.Optimizer`:
+    The optimizer to wrap with the LAP algorithm.
+
+- `lap_n`: `int`, optional:
+    The number of previous loss values for each source
+    to be used in the loss adapted plasticity
+    calculations.
+    Defaults to `10`.
+
+- `depression_strength`: `float`, optional:
+    This float determines the strength of the depression
+    applied to the gradients. It is the value of `m` in 
+    `dep = 1-tanh(m*d)**2`.
+    Defaults to `1`.
+
+- `depression_function`: `function` or `string`, optional:
+    This is the function used to calculate the depression
+    based on the loss array (with sources containing full 
+    loss history) and the source of the current batch. 
+    Ensure that the first two arguments of this function are
+    loss_array and source_idx.
+    If string, please ensure it is `'discrete_ranking_std'`
+    Defaults to `'discrete_ranking_std'`.
+
+- `depression_function_kwargs`: `dict`, optional:
+    Keyword arguments that will be used in depression_function
+    when initiating it, if it is specified by a string.
+    Defaults to `{}`.
+
+- `source_is_bool`: `bool`, optional:
+    This tells the optimizer that the sources will be named True
+    when the source is corrupted and False if the source is not.
+    If the incoming source is corrupted, then the optimizer will not
+    make a step.
+    Defaults to `False`.
+
+
 ## Training and Testing on Synthetic Data
 
 To train the models on synthetic data, please use the `test_hparam_synthetic.py` or `test_hparam_different_noise_synthetic.py` files with the desired arguments for that given experiment. 
