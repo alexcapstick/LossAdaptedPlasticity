@@ -55,7 +55,18 @@ And can be used as follows:
 
 ```python
 import torch
-optimizer = LAP(torch.optim.Adam, lr=0.01)
+
+example_model = torch.nn.Linear(100,10)
+
+optimizer = LAP(
+    torch.optim.Adam, 
+    params=example_model.parameters(), 
+    lr=0.01,
+    lap_n=25,
+    depression_strength=1.0,
+    # below is passed as dict as different depression functions can easily be addded
+    depression_function_kwargs={'strictness': 0.8} 
+    )
 ```
 
 ## Training and Testing on Synthetic Data
