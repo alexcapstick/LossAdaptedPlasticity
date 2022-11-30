@@ -1,0 +1,1304 @@
+name: &save_model
+  model_path: './outputs/models/'
+  result_path: './outputs/results/'
+
+
+
+############# training procedures #############
+
+
+name: &traditional_train_params
+  train_method: 'traditional'
+  batch_size: 200
+
+
+
+######## 1D for FMNIST
+
+# random label 1D - batch has random labels
+name: &source_random_label_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'label_random'
+  corruption_function_kwargs:
+    labels: 10
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_random_label_srb_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'label_random'
+  corruption_function_kwargs:
+    labels: 10
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+# noise saved - data is added with same noise for the same example
+name: &source_noise_saved_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+name: &source_noise_saved_srb_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+# batch flip 1D - batch has all the same labels, chosen from one of
+# the labels in a batch
+name: &source_label_batch_flip_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'label_flip'
+  corruption_function_kwargs:
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_label_batch_flip_srb_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'label_flip'
+  corruption_function_kwargs:
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+### no corruption
+name: &source_no_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 0
+  corruption_function: null
+  corruption_function_kwargs: {}
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+### label batch shuffle
+name: &source_label_batch_shuffle_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'label_shuffle'
+  corruption_function_kwargs:
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_label_batch_shuffle_srb_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'label_shuffle'
+  corruption_function_kwargs:
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+# noise only - data is replaced with noise
+name: &source_noise_only_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    noise_only: True
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_noise_only_srb_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    noise_only: True
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+# chunk swap - data is shuffled the same for each source
+name: &source_shuffle_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  corruption_function: 'chunk_swap'
+  corruption_function_kwargs:
+    n_xpieces: 10
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_shuffle_srb_corruption_train_params
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 200
+  n_corrupt_sources: 6
+  return_bool_source: True
+  corruption_function: 'chunk_swap'
+  corruption_function_kwargs:
+    n_xpieces: 10
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 2D for CIFAR
+
+
+name: &source_no_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 0
+  corruption_function: null
+  corruption_function_kwargs: {}
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+name: &source_sff_no_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: False
+  return_sources: False
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 0
+  corruption_function: null
+  corruption_function_kwargs: {}
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+# chunk swap - data is shuffled the same for each source
+name: &source_shuffle_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'chunk_swap'
+  corruption_function_kwargs:
+    n_xpieces: 10
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_shuffle_srb_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  return_bool_source: True
+  corruption_function: 'chunk_swap'
+  corruption_function_kwargs:
+    n_xpieces: 10
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+# noise - data is added with noise
+name: &source_noise_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    source_save: False
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_noise_srb_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  return_bool_source: True
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    source_save: False
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+# noise saved - data is added with same noise for the same example
+name: &source_noise_saved_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+name: &source_noise_saved_srf_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: False
+  return_sources: False
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+name: &source_noise_saved_srb_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+
+
+# noise only - data is replaced with noise
+name: &source_noise_only_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    noise_only: True
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_noise_only_srb_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'noise'
+  corruption_function_kwargs:
+    mean: 0
+    std: 1
+    noise_only: True
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+
+
+# random label 2D - batch has random labels
+name: &source_random_label_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'label_random'
+  corruption_function_kwargs:
+    labels: 10
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+name: &source_random_label_corruption_train_params_2d_cfns
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'label_random'
+  corrupt_for_n_steps: 192000
+  corruption_function_kwargs:
+    labels: 10
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+name: &source_random_label_srb_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'label_random'
+  corruption_function_kwargs:
+    labels: 10
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+
+
+# batch flip 2D - batch has all the same labels, chosen from one of
+# the labels in a batch
+name: &source_label_batch_flip_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'label_flip'
+  corruption_function_kwargs:
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_label_batch_flip_srb_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'label_flip'
+  corruption_function_kwargs:
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+
+
+# batch label shuffle 2D - batch has labels shuffled
+name: &source_label_batch_shuffle_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'label_shuffle'
+  corruption_function_kwargs:
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_label_batch_shuffle_srb_corruption_train_params_2d
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'label_shuffle'
+  corruption_function_kwargs:
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+
+
+### Specifically for CIFAR 100
+
+# random label 2D - batch has random labels
+name: &source_random_label_corruption_train_params_2d_cifar100
+  train_method: 'traditional source'
+  source_fit: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'label_random'
+  corruption_function_kwargs:
+    labels: 100 
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+name: &source_random_label_srb_corruption_train_params_2d_cifar100
+  train_method: 'traditional source'
+  source_fit: True
+  return_bool_source: True
+  n_sources: 10
+  source_size: 128
+  n_corrupt_sources: 4
+  corruption_function: 'label_random'
+  corruption_function_kwargs:
+    labels: 100
+    source_save: True
+  validation:
+    do_val: True
+    train_split: 0.75
+    corrupt: False
+
+
+
+
+
+
+############# testing procedures #############
+
+
+name: &traditional_testing_parameters
+  test_method: 'traditional'
+  batch_size: 200
+
+testing-procedures:
+  traditional:
+    *traditional_testing_parameters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# FMNIST
+
+
+######## Base MLP
+
+name: &MLP_drstd_base
+  in_features: 784
+  out_features: 10 
+  hidden_layer_features: [16,16,]
+  n_epochs: 25
+  train_optimizer:
+    adam_lap:
+      params: ['all']
+      lr: 0.001
+      lap_n: 50
+      depression_strength: 1.0
+      depression_function: 'discrete_ranking_std'
+      depression_function_kwargs: 
+        strictness: 0.8
+        hold_off: 0
+  train_criterion: 'CE'
+
+
+name: &MLP_drstd_srb_base
+  in_features: 784
+  out_features: 10 
+  hidden_layer_features: [16,16,]
+  n_epochs: 25
+  train_optimizer:
+    adam_lap:
+      params: ['all']
+      lr: 0.001
+      lap_n: 50
+      depression_strength: 1.0
+      source_is_bool: True # the difference to above
+      depression_function: 'discrete_ranking_std'
+      depression_function_kwargs: 
+        strictness: 0.8
+        hold_off: 0
+  train_criterion: 'CE'
+
+
+
+# random label
+MLP-c_rl-drstd:
+  model_name: 'MLP-c_rl-drstd'
+  model_params:
+    *MLP_drstd_base
+  train_params:
+    *source_random_label_corruption_train_params
+  save_params:
+    *save_model
+
+MLP-c_rl_srb-drstd:
+  model_name: 'MLP-c_rl_srb-drstd'
+  model_params:
+    *MLP_drstd_srb_base
+  train_params:
+    *source_random_label_srb_corruption_train_params
+  save_params:
+    *save_model
+
+
+
+
+# noise added
+MLP-c_ns-drstd:
+  model_name: 'MLP-c_ns-drstd'
+  model_params:
+    *MLP_drstd_base
+  train_params:
+    *source_noise_saved_corruption_train_params
+  save_params:
+    *save_model
+
+MLP-c_ns_srb-drstd:
+  model_name: 'MLP-c_ns_srb-drstd'
+  model_params:
+    *MLP_drstd_srb_base
+  train_params:
+    *source_noise_saved_srb_corruption_train_params
+  save_params:
+    *save_model
+
+
+# random label
+MLP-c_lbf-drstd:
+  model_name: 'MLP-c_lbf-drstd'
+  model_params:
+    *MLP_drstd_base
+  train_params:
+    *source_label_batch_flip_corruption_train_params
+  save_params:
+    *save_model
+
+MLP-c_lbf_srb-drstd:
+  model_name: 'MLP-c_lbf_srb-drstd'
+  model_params:
+    *MLP_drstd_srb_base
+  train_params:
+    *source_label_batch_flip_srb_corruption_train_params
+  save_params:
+    *save_model
+
+
+# no corruption
+MLP-no_c-drstd:
+  model_name: 'MLP-no_c-drstd'
+  model_params:
+    *MLP_drstd_base
+  train_params:
+    *source_no_corruption_train_params
+  save_params:
+    *save_model
+
+
+# random label
+MLP-c_lbs-drstd:
+  model_name: 'MLP-c_lbs-drstd'
+  model_params:
+    *MLP_drstd_base
+  train_params:
+    *source_label_batch_shuffle_corruption_train_params
+  save_params:
+    *save_model
+
+MLP-c_lbs_srb-drstd:
+  model_name: 'MLP-c_lbs_srb-drstd'
+  model_params:
+    *MLP_drstd_srb_base
+  train_params:
+    *source_label_batch_shuffle_srb_corruption_train_params
+  save_params:
+    *save_model
+
+
+# noise only
+MLP-c_no-drstd:
+  model_name: 'MLP-c_no-drstd'
+  model_params:
+    *MLP_drstd_base
+  train_params:
+    *source_noise_only_corruption_train_params
+  save_params:
+    *save_model
+
+MLP-c_no_srb-drstd:
+  model_name: 'MLP-c_no_srb-drstd'
+  model_params:
+    *MLP_drstd_srb_base
+  train_params:
+    *source_noise_only_srb_corruption_train_params
+  save_params:
+    *save_model
+
+
+
+# noise only
+MLP-c_cs-drstd:
+  model_name: 'MLP-c_cs-drstd'
+  model_params:
+    *MLP_drstd_base
+  train_params:
+    *source_shuffle_corruption_train_params
+  save_params:
+    *save_model
+
+MLP-c_cs_srb-drstd:
+  model_name: 'MLP-c_cs_srb-drstd'
+  model_params:
+    *MLP_drstd_srb_base
+  train_params:
+    *source_shuffle_srb_corruption_train_params
+  save_params:
+    *save_model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CIFAR 10
+
+####### Base CovNet with DR-STD
+
+
+# this one has no LAP
+name: &Conv3Net_base
+  input_dim: 32
+  in_channels: 3
+  channels: 32
+  n_out: 10
+  n_epochs: 25
+  train_optimizer:
+    adam:
+      params: ['all']
+      lr: 0.001
+  train_criterion: 'CE'
+
+
+name: &Conv3Net_drstd_base
+  input_dim: 32
+  in_channels: 3
+  channels: 32
+  n_out: 10
+  n_epochs: 25
+  train_optimizer:
+    adam_lap:
+      params: ['all']
+      lr: 0.001
+      lap_n: 20
+      depression_strength: 1.0
+      depression_function: 'discrete_ranking_std'
+      depression_function_kwargs: 
+        strictness: 0.8
+        hold_off: 0
+  train_criterion: 'CE'
+
+
+name: &Conv3Net_drstd_srb_base
+  input_dim: 32
+  in_channels: 3
+  channels: 32
+  n_out: 10
+  n_epochs: 25
+  train_optimizer:
+    adam_lap:
+      params: ['all']
+      lr: 0.001
+      lap_n: 20
+      depression_strength: 0.0
+      source_is_bool: True # the difference to above
+      depression_function: 'discrete_ranking_std'
+      depression_function_kwargs: 
+        strictness: 0.8
+        hold_off: 0
+  train_criterion: 'CE'
+
+
+
+
+# random label
+Conv3Net-c_rl-drstd:
+  model_name: 'Conv3Net-c_rl-drstd'
+  model_params:
+    *Conv3Net_drstd_base
+  train_params:
+    *source_random_label_corruption_train_params_2d
+  save_params:
+    *save_model
+
+Conv3Net-c_rl_srb-drstd:
+  model_name: 'Conv3Net-c_rl_srb-drstd'
+  model_params:
+    *Conv3Net_drstd_srb_base
+  train_params:
+    *source_random_label_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+Conv3Net-c_rl_cfns-drstd:
+  model_name: 'Conv3Net-c_rl_cfns-drstd'
+  model_params:
+    *Conv3Net_drstd_base
+  train_params:
+    *source_random_label_corruption_train_params_2d_cfns
+  save_params:
+    *save_model
+
+
+
+# label batch flip
+Conv3Net-c_lbf-drstd:
+  model_name: 'Conv3Net-c_lbf-drstd'
+  model_params:
+    *Conv3Net_drstd_base
+  train_params:
+    *source_label_batch_flip_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+Conv3Net-c_lbf_srb-drstd:
+  model_name: 'Conv3Net-c_lbf_srb-drstd'
+  model_params:
+    *Conv3Net_drstd_srb_base
+  train_params:
+    *source_label_batch_flip_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+
+
+# label batch shuffle
+Conv3Net-c_lbs-drstd:
+  model_name: 'Conv3Net-c_lbs-drstd'
+  model_params:
+    *Conv3Net_drstd_base
+  train_params:
+    *source_label_batch_shuffle_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+Conv3Net-c_lbs_srb-drstd:
+  model_name: 'Conv3Net-c_lbs_srb-drstd'
+  model_params:
+    *Conv3Net_drstd_srb_base
+  train_params:
+    *source_label_batch_shuffle_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+
+
+
+# feature add noise but save per source
+
+Conv3Net-c_ns-drstd:
+  model_name: 'Conv3Net-c_ns-drstd'
+  model_params:
+    *Conv3Net_drstd_base
+  train_params:
+    *source_noise_saved_corruption_train_params_2d
+  save_params:
+    *save_model
+
+Conv3Net-c_ns_srb-drstd:
+  model_name: 'Conv3Net-c_ns_srb-drstd'
+  model_params:
+    *Conv3Net_drstd_srb_base
+  train_params:
+    *source_noise_saved_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+# noise corruption but source_fit=False and source_return_bool=False
+Conv3Net-c_ns:
+  model_name: 'Conv3Net-c_ns'
+  model_params:
+    *Conv3Net_base
+  train_params:
+    *source_noise_saved_srf_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+
+
+
+# feature replace with noise
+Conv3Net-c_no-drstd:
+  model_name: 'Conv3Net-c_no-drstd'
+  model_params:
+    *Conv3Net_drstd_base
+  train_params:
+    *source_noise_only_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+Conv3Net-c_no_srb-drstd:
+  model_name: 'Conv3Net-c_no_srb-drstd'
+  model_params:
+    *Conv3Net_drstd_srb_base
+  train_params:
+    *source_noise_only_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+# chunk swap
+Conv3Net-c_cs-drstd:
+  model_name: 'Conv3Net-c_cs-drstd'
+  model_params:
+    *Conv3Net_drstd_base
+  train_params:
+    *source_shuffle_corruption_train_params_2d
+  save_params:
+    *save_model
+
+Conv3Net-c_cs_srb-drstd:
+  model_name: 'Conv3Net-c_cs_srb-drstd'
+  model_params:
+    *Conv3Net_drstd_srb_base
+  train_params:
+    *source_shuffle_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+
+# no corruption
+Conv3Net-no_c-drstd:
+  model_name: 'Conv3Net-no_c-drstd'
+  model_params:
+    *Conv3Net_drstd_base
+  train_params:
+    *source_no_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+Conv3Net-no_c:
+  model_name: 'Conv3Net-no_c'
+  model_params:
+    *Conv3Net_base
+  train_params:
+    *source_sff_no_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# CIFAR100
+
+name: &Conv3Net_100_drstd_base
+  input_dim: 32
+  in_channels: 3
+  channels: 32
+  n_out: 100
+  n_epochs: 25
+  train_optimizer:
+    adam_lap:
+      params: ['all']
+      lr: 0.001
+      lap_n: 20
+      depression_strength: 1.0
+      depression_function: 'discrete_ranking_std'
+      depression_function_kwargs: 
+        strictness: 0.8
+        hold_off: 0
+  train_criterion: 'CE'
+
+
+name: &Conv3Net_100_drstd_srb_base
+  input_dim: 32
+  in_channels: 3
+  channels: 32
+  n_out: 100
+  n_epochs: 25
+  train_optimizer:
+    adam_lap:
+      params: ['all']
+      lr: 0.001
+      lap_n: 20
+      depression_strength: 0.0
+      source_is_bool: True # the difference to above
+      depression_function: 'discrete_ranking_std'
+      depression_function_kwargs: 
+        strictness: 0.8
+        hold_off: 0
+  train_criterion: 'CE'
+
+
+
+
+
+# random label
+
+Conv3Net_100-c_rl-drstd:
+  model_name: 'Conv3Net_100-c_rl-drstd'
+  model_params:
+    *Conv3Net_100_drstd_base
+  train_params:
+    *source_random_label_corruption_train_params_2d_cifar100
+  save_params:
+    *save_model
+
+Conv3Net_100-c_rl_srb-drstd:
+  model_name: 'Conv3Net_100-c_rl_srb-drstd'
+  model_params:
+    *Conv3Net_100_drstd_srb_base
+  train_params:
+    *source_random_label_srb_corruption_train_params_2d_cifar100
+  save_params:
+    *save_model
+
+
+
+
+
+# label batch flip
+
+Conv3Net_100-c_lbf-drstd:
+  model_name: 'Conv3Net_100-c_lbf-drstd'
+  model_params:
+    *Conv3Net_100_drstd_base
+  train_params:
+    *source_label_batch_flip_corruption_train_params_2d
+  save_params:
+    *save_model
+
+Conv3Net_100-c_lbf_srb-drstd:
+  model_name: 'Conv3Net_100-c_lbf_srb-drstd'
+  model_params:
+    *Conv3Net_100_drstd_srb_base
+  train_params:
+    *source_label_batch_flip_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+
+
+
+# label batch shuffle
+
+Conv3Net_100-c_lbs-drstd:
+  model_name: 'Conv3Net_100-c_lbs-drstd'
+  model_params:
+    *Conv3Net_100_drstd_base
+  train_params:
+    *source_label_batch_shuffle_corruption_train_params_2d
+  save_params:
+    *save_model
+
+Conv3Net_100-c_lbs_srb-drstd:
+  model_name: 'Conv3Net_100-c_lbs_srb-drstd'
+  model_params:
+    *Conv3Net_100_drstd_srb_base
+  train_params:
+    *source_label_batch_shuffle_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+
+# feature add noise but save per source
+
+Conv3Net_100-c_ns-drstd:
+  model_name: 'Conv3Net_100-c_ns-drstd'
+  model_params:
+    *Conv3Net_100_drstd_base
+  train_params:
+    *source_noise_saved_corruption_train_params_2d
+  save_params:
+    *save_model
+
+Conv3Net_100-c_ns_srb-drstd:
+  model_name: 'Conv3Net_100-c_ns_srb-drstd'
+  model_params:
+    *Conv3Net_100_drstd_srb_base
+  train_params:
+    *source_noise_saved_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+# feature replace with noise
+
+Conv3Net_100-c_no-drstd:
+  model_name: 'Conv3Net_100-c_no-drstd'
+  model_params:
+    *Conv3Net_100_drstd_base
+  train_params:
+    *source_noise_only_corruption_train_params_2d
+  save_params:
+    *save_model
+
+Conv3Net_100-c_no_srb-drstd:
+  model_name: 'Conv3Net_100-c_no_srb-drstd'
+  model_params:
+    *Conv3Net_100_drstd_srb_base
+  train_params:
+    *source_noise_only_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+# chunk swap
+
+Conv3Net_100-c_cs-drstd:
+  model_name: 'Conv3Net_100-c_cs-drstd'
+  model_params:
+    *Conv3Net_100_drstd_base
+  train_params:
+    *source_shuffle_corruption_train_params_2d
+  save_params:
+    *save_model
+
+Conv3Net_100-c_cs_srb-drstd:
+  model_name: 'Conv3Net_100-c_cs_srb-drstd'
+  model_params:
+    *Conv3Net_100_drstd_srb_base
+  train_params:
+    *source_shuffle_srb_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+# no corruption
+
+Conv3Net_100-no_c-drstd:
+  model_name: 'Conv3Net_100-no_c-drstd'
+  model_params:
+    *Conv3Net_100_drstd_base
+  train_params:
+    *source_no_corruption_train_params_2d
+  save_params:
+    *save_model
+
+
+
+
+
+
+
+
+

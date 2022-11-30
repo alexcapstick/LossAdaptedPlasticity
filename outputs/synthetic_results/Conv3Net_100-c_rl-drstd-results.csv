@@ -1,0 +1,61 @@
+Run,Metric,Value
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_1024-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2831000089645386
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_1024-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.3941999971866607
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_1024-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5622000098228455
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_128-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2651999890804291
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_128-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.3695000112056732
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_128-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5368000268936157
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_16-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2847000062465668
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_16-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.395000010728836
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_16-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5683000087738037
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_2-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2721999883651733
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_2-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.38960000872612
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_2-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5649999976158142
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_256-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2773999869823456
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_256-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.3890999853610992
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_256-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5605000257492065
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_32-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2869000136852264
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_32-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.3955999910831451
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_32-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5591999888420105
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_4-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2601000070571899
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_4-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.3657000064849853
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_4-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.541100025177002
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_512-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2829999923706054
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_512-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.3993000090122223
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_512-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5695000290870667
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_64-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2705999910831451
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_64-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.3817000091075897
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_64-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5608999729156494
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_8-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2867000102996826
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_8-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4004999995231628
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_0.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_8-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5659999847412109
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_1024-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.3102000057697296
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_1024-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4296999871730804
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_1024-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.6129000186920166
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_128-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.3048000037670135
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_128-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4242999851703644
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_128-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.604200005531311
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_16-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.3084999918937683
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_16-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4323000013828277
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_16-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.6069999933242798
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_2-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.3075999915599823
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_2-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4348999857902527
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_2-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.6209999918937683
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_256-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.316100001335144
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_256-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4384999871253967
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_256-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.6223000288009644
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_32-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.3208000063896179
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_32-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4381000101566314
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_32-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.6176000237464905
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_4-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.2802000045776367
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_4-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4027999937534332
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_4-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.5902000069618225
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_512-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.3041000068187713
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_512-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4325999915599823
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_512-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.6134999990463257
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_64-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.3206000030040741
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_64-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4442000091075897
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_64-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.6248000264167786
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_8-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Accuracy,0.3170999884605407
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_8-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.4377000033855438
+Conv3Net_100-c_rl-drstd-ns_10-ncs_2-ssize_128-ds_1.0-stns_0.8-lap_n_25-ho_250-ne_40-seed_8-dataset_cifar100-epoch_40-all_trained-state_dict.pth,Top 5 Accuracy,0.6126999855041504

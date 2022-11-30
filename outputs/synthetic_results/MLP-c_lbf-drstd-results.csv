@@ -1,0 +1,81 @@
+Run,Metric,Value
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8044999837875366
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.9000999927520752
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.772599995136261
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.857699990272522
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7730000019073486
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8518999814987183
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7585999965667725
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8418999910354614
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8216000199317932
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.9121999740600586
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8118000030517578
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.9014999866485596
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7781000137329102
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8549000024795532
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7767000198364258
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8547000288963318
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7597000002861023
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8382999897003174
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8209999799728394
+MLP-c_lbf-drstd-ns_10-ncs_4-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.9092000126838684
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_1024-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7922999858856201
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_1024-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8938000202178955
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_128-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7815999984741211
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_128-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8654999732971191
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7851999998092651
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8858000040054321
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7813000082969666
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8593999743461609
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_256-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7799000144004822
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_256-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8776000142097473
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7901999950408936
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8899000287055969
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.6844000220298767
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8723000288009644
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_512-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7723000049591064
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_512-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8752999901771545
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_64-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8152999877929688
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_64-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.9118000268936156
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.781499981880188
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8822000026702881
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_1024-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8043000102043152
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_1024-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.901099979877472
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_128-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8008999824523926
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_128-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8932999968528748
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8123999834060669
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.9010000228881836
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7906000018119812
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8605999946594238
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_256-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.809499979019165
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_256-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8916000127792358
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8152999877929688
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.9003999829292297
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.689300000667572
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8452000021934509
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_512-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7967000007629395
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_512-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8833000063896179
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_64-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.8198000192642212
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_64-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.9229000210762024
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7876999974250793
+MLP-c_lbf-drstd-ns_10-ncs_6-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8622999787330627
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.5979999899864197
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.7684000134468079
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.666100025177002
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.7652000188827515
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.6335999965667725
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.7103000283241272
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7307000160217285
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8762000203132629
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.5742999911308289
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_0.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.6840999722480774
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.5979999899864197
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_16-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.7684000134468079
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.666100025177002
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_2-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.7652000188827515
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.6335999965667725
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_32-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.7103000283241272
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.7307000160217285
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_4-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.8762000203132629
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Accuracy,0.5742999911308289
+MLP-c_lbf-drstd-ns_10-ncs_8-ssize_200-ds_1.0-stns_0.8-lap_n_50-ne_40-seed_8-dataset_fmnist-epoch_40-all_trained-state_dict.pth,Top 2 Accuracy,0.6840999722480774
