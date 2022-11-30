@@ -95,7 +95,7 @@ class ProgressParallel(Parallel):
             :code:`desc`, :code:`total`, and  :code:`disable`
             (verbose) cannot be passed here. Please 
             use the arguments above.
-            Defaults to :code:`aml_tqdm_style` (see :code:`aml.tqdm_style`).
+            Defaults to :code:`tqdm_style`.
 
         
         '''

@@ -205,8 +205,8 @@ class LAP(object):
         .. code-block::
             
             >>> optimizer = LAP(
-            ...     torch.optim.Adam(model.parameters(), lr=0.01)
-            ... )
+            ...     torch.optim.Adam, params=model.parameters(), lr=0.01,
+            ...     )
         
         Ensure that when using this optimiser, during the :code:`.step`
         method, you use the arguments :code:`loss` and :code:`source`. 

@@ -187,7 +187,7 @@ def set_colour_map(colours:list=tol_muted):
 
     .. code-block::
     
-        >>> set_colour_map(colours=avt.tol_muted)
+        >>> set_colour_map(colours=tol_muted)
     
     
     Arguments
@@ -217,7 +217,7 @@ def temp_colour_map(colours=tol_muted):
 
     .. code-block::
     
-        >>> with set_colour_map(colours=avt.tol_muted):
+        >>> with set_colour_map(colours=tol_muted):
         ...     plt.plot(x,y)
     
     
@@ -498,7 +498,7 @@ class ProgressParallel(Parallel):
             :code:`desc`, :code:`total`, and  :code:`disable`
             (verbose) cannot be passed here. Please 
             use the arguments above.
-            Defaults to :code:`aml_tqdm_style` (see :code:`aml.tqdm_style`).
+            Defaults to :code:`tqdm_style`.
 
         
         '''

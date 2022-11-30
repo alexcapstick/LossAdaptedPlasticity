@@ -424,7 +424,7 @@ class ECGCorruptor(torch.utils.data.Dataset):
         and the seed for determining the random events. This
         class allows you to corrupt either the :code:`'x'`, :code:`'y'`, 
         or :code:`'both'`. This class is built specifically for use with
-        PTB_XL (found in :code:`aml.data.datasets`).
+        PTB_XL.
 
         This function will work as expected on all devices.
         

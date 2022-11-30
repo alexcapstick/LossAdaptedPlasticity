@@ -1,4 +1,4 @@
-# python test_cifarn_different_noise.py --seed 2 4
+# python test_cifarn_different_noise.py --seed 2 4 8 16 32 64 128 256 512 1024 
 
 import numpy as np
 import pandas as pd

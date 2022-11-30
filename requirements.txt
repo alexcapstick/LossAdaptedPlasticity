@@ -1,0 +1,11 @@
+numpy>=1.19.5
+pandas>=1.4.2
+matplotlib>=3.4.2
+seaborn>=0.11.2
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.11.0
+torchvision>=0.11.3
+tensorboard>=2.8.0
+pyyaml>=6.0
+imbalanced-learn>=0.9.1
+wfb>=4.0.0
