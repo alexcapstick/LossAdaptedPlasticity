@@ -83,18 +83,21 @@ before the values are passed to the underlying optimiser.
 
 
 The following wraps the Adam optimiser with the LAP functionality.
-    
-    >>> optimizer = LAP(
-    ...     torch.optim.Adam, params=model.parameters(), lr=0.01,
-    ...     )
+
+```python
+optimizer = LAP(
+    torch.optim.Adam, params=model.parameters(), lr=0.01,
+    )
+```
 
 Ensure that when using this optimiser, during the `.step`
 method, you use the arguments `loss` and `source`. 
 For example:
 
-    >>> loss = loss.backward()
-    >>> optimizer.step(loss, source)
-
+```python
+loss = loss.backward()
+optimizer.step(loss, source)
+```
 
 ### Arguments
 
