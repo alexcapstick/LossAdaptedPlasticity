@@ -1,4 +1,9 @@
-# If You're Just Looking for the Graphs!
+# Loss Adapted Plasticity in Deep Neural Networks to Learn from Data with Unreliable Sources
+
+This repository includes the code required to reproduce the experiments and figures in the paper "Loss Adapted Plasticity in Deep Neural Networks to Learn from Data with Unreliable Sources".
+
+
+## If You're Just Looking for the Graphs!
 
 These can be found in the notebooks:
 
@@ -9,7 +14,7 @@ These can be found in the notebooks:
 Read on for more information on how to run the experiments yourself, and how you can use LAP:
 
 
-# Code for Loss Adapted Plasticity
+## Code for Loss Adapted Plasticity
 
 This directory contains the code required to run the experiments to produce the results presented in the paper "Loss Adapted Plasticity in Deep Neural Networks to Learn from Data with Unreliable Sources"
 
