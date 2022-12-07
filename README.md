@@ -1,6 +1,6 @@
 # Loss Adapted Plasticity in Deep Neural Networks to Learn from Data with Unreliable Sources
 
-This repository includes the code required to reproduce the experiments and figures in the paper "Loss Adapted Plasticity in Deep Neural Networks to Learn from Data with Unreliable Sources".
+This repository includes the code required to reproduce the experiments and figures in the pre-print paper ["Loss Adapted Plasticity in Deep Neural Networks to Learn from Data with Unreliable Sources"](https://arxiv.org/abs/2212.02895).
 
 
 ## If You're Just Looking for the Graphs!
